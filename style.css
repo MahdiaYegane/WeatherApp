@@ -1,0 +1,106 @@
+body {
+  background-image: linear-gradient(300deg, #1b063c, #292050, #000327);
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.date,
+.minMax {
+  color: #fff;
+}
+
+.dropdown-item {
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+  width: 4rem;
+  background-color: #33558c;
+}
+
+.dropdown-item:hover {
+  background-color: #57ade6;
+}
+
+.nav {
+  margin-bottom: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flagImg {
+  cursor: pointer;
+}
+
+.text1 {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20rem;
+  width: 30rem;
+}
+
+.input {
+  padding: 1rem;
+  width: 18rem;
+  border-radius: 10rem;
+  font-size: 18px;
+}
+
+.input::placeholder {
+  color: #a9a9a9;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgb(184, 238, 241);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.temp {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.country {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.btn1 {
+  font-size: 15px;
+  padding: 1.2rem;
+  background-image: radial-gradient(#5fade6, #3a6ec2);
+  color: #fff;
+  border-radius: 10rem;
+  border: none;
+  font-weight: lighter;
+}
+
+.btn1:hover {
+  background-image: radial-gradient(#5897fd, #346bf6);
+  color: #fff;
+}
+
+.status {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.poland:hover,
+.egypt:hover,
+.Germany:hover,
+.canada:hover,
+.mexico:hover,
+.denmark:hover {
+  filter: brightness(50%);
+}

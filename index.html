@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="dropdown">
+        <button type="button" class="rounded-3" data-toggle="dropdown">
+          <kbd style="background-color: #fff; color: #000327; font-size: 22px">&#9776;</kbd>
+        </button>
+
+        <div class="dropdown-menu bg-transparent border-0">
+          <a class="dropdown-item infoNav" href="#" data-toggle="modal" data-target="#exampleModalLong"><img class="" src="images/info.png" width="30"/></a>
+          <a class="dropdown-item" href="#"><img class="flag" data-toggle="modal" data-target="#exampleModalLong2" src="images/flag.png" width="40"/></a>
+          <a class="dropdown-item homeNav" href="#"><img class="" src="images/cloud2.png" width="30"/></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <h2 class="temp">Temp˚C</h2>
+      <p class="date">Current Date</p>
+      <input type="text" class="input" placeholder="Search for weather" />
+      <p class="country">Country , Mx</p>
+      <p class="status">Status</p>
+      <img src="images/cloud.png" width="230" />
+      <p class="minMax">Min / Max</p>
+      <button class="btn1">search for Weather</button>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModalLong2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Choose country
+            </h5>
+            <button
+              type="button"
+              class="close btn btn-light fs-2"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="flagImg poland" src="images/Poland.png" width="50" />
+            <img class="flagImg egypt" src="images/egypt.png" width="50" />
+            <img class="flagImg Germany" src="images/Germany.png" width="50" />
+            <img class="flagImg canada" src="images/canada.png" width="50" />
+            <img class="flagImg mexico" src="images/mexico.png" width="50" />
+            <img class="flagImg denmark" src="images/denmark.png" width="50" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalLong"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              about this project
+            </h5>
+            <button
+              type="button"
+              class="close btn btn-light fs-2"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            The best weather apps are very useful tools, and have a lot more to
+            offer than whatever piece of software your phone has out of the box.
+            The stock weather app is fine for the basics, but it lacks the kind
+            of features a dedicated weather app will have to offer. Like
+            extended forecasts, severe weather warnings, and so on. Each
+            dedicated weather app typically has a different kind of
+            specialization. For some it's
+            <span class="text-warning">hyper-local forecasting</span>, while
+            other offer air quality stats, moon cycle tracking, or the
+            excruciatingly high detail that is lost on most people who don't
+            have meteorology degrees. Plus, with climate change making weather
+            increasingly hard to predict, it's a big help to have the right
+            tools as your disposal. Your stock weather app might be alright for
+            now, but it's still worth checking out what the other options are —
+            especially if they have the chance to be better. Here are your
+            options for the best weather apps available right now.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
